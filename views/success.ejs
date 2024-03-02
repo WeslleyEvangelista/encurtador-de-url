@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortened</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <img src="/images/url_icon.png" alt="Curtinho" class="icon"/>
+                <h1 class="display-6">URL Encurtada:</h1>
+                <p class="lead"><a href="/<%= shortUrl %>" target="_blank">http://localhost:3000/<%= shortUrl %></a></p>
+                <p class="lead">URL original: <br><a href="<%= originalUrl %>" target="_blank"><%= originalUrl %></a><br>
+                <a href="/" class="btn btn-primary mt-5">Encurtar uma nova URL</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

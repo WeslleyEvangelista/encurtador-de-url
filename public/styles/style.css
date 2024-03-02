@@ -1,0 +1,20 @@
+body {
+    margin-top: 50px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+    /* padding: 0 15px; */
+    padding: 3rem;
+    text-align: center;
+}
+
+.icon {
+    height: 240px;
+}
+
+p {
+    font-size: 1.3rem;
+}
