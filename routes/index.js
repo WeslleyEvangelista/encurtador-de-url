@@ -39,7 +39,7 @@ router.get("/:shortUrl", async (req, res) => {
   const url = await Url.findOne({ where: { shortUrl } });
 
   url
-    ? res.redirect(url.originalUrl)
+    ? res.status(301).redirect(url.originalUrl)
     : res.status(404).send("URL não encontrada");
 });
 
